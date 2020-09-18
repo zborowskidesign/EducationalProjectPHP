@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  margin: 1rem;
+}
+
+.log-out {
+  z-index: 9999;
+  color: royalblue;
+  text-decoration: none;
+}
+
+/*lines animations*/
+.vertical-line {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  display: inline-block;
+  width: 2px;
+  background-color: #E61E74;
+  -webkit-animation: moveBottom 2s forwards;
+          animation: moveBottom 2s forwards;
+}
+
+.vertical-line-left {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  display: inline-block;
+  width: 2px;
+  background-color: #E61E74;
+  -webkit-animation: moveBottom 2s forwards;
+          animation: moveBottom 2s forwards;
+}
+
+.horizontal-line {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  height: 2px;
+  background-color: #E61E74;
+  -webkit-animation: moveRight 2s forwards;
+          animation: moveRight 2s forwards;
+}
+
+@-webkit-keyframes moveBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes moveBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes moveRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+/*left side menu*/
+ul {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  list-style-type: none;
+  z-index: 9999;
+}
+
+ul li {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  opacity: 0;
+  -webkit-animation: ShowItems 5s forwards;
+          animation: ShowItems 5s forwards;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #E61E74;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -0.5rem;
+  width: 1em;
+}
+
+li a:hover {
+  margin-left: 1rem;
+}
+
+@-webkit-keyframes ShowItems {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowItems {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*dark mode*/
+.center-by-all-means {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container .switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .switch .slider {
+  position: absolute;
+  right: 3%;
+  height: 60px;
+  width: 120px;
+  border-radius: 30px;
+  background-color: #272751;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 99;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.container .switch .slider:before {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  height: 50px;
+  width: 50px;
+  content: "";
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#toggle {
+  opacity: 0;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+#toggle:checked ~ .slider {
+  background-color: white;
+}
+
+#toggle:checked ~ .slider:before {
+  background-color: white;
+  -webkit-box-shadow: inset -20px -10px 0 0px #272751;
+          box-shadow: inset -20px -10px 0 0px #272751;
+  -webkit-transform: translate(60px, 1px);
+          transform: translate(60px, 1px);
+}
+
+#toggle:checked ~ .slide-block {
+  left: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.slide-block {
+  height: 100vh;
+  width: 150vw;
+  position: absolute;
+  top: 0;
+  background: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.slide-block.slide-out {
+  left: -150vw;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.slide-block.slide-in {
+  left: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/*# sourceMappingURL=panel.css.map */

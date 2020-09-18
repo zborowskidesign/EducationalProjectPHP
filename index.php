@@ -4,7 +4,7 @@ session_start();
 
 if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
 {
-    header('Location: clock_panel.php');
+    header('Location: panel.php');
     exit();
 }
 
@@ -15,7 +15,7 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work time clock</title>
+    <title>Nauka programowania</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
@@ -49,7 +49,6 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
 
 
 
-   
-    <script type="text/javascript" src="clock.js"></script>
+ 
 </body>
 </html>
