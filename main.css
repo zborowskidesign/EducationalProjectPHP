@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #FEFDFE;
+}
+
+/*Animation lines*/
+.vertical-line {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: inline-block;
+  width: 2px;
+  background-color: #E61E74;
+  -webkit-animation: moveBottom 2s forwards;
+          animation: moveBottom 2s forwards;
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 2px;
+  background-color: #E61E74;
+  -webkit-animation: moveRight 2s forwards;
+          animation: moveRight 2s forwards;
+}
+
+@-webkit-keyframes moveBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes moveBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes moveRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+/*Login and register panel*/
+form {
+  margin: 10% auto 0 auto;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+}
+
+form label {
+  font-size: 14px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+form label,
+form input {
+  float: left;
+  clear: both;
+}
+
+form input {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+form input[type=text]:focus,
+form input[type="password"]:focus {
+  border-color: cornflowerblue;
+}
+
+input[type=submit] {
+  padding: 15px 50px;
+  width: auto;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  clear: right;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  border: 2px solid #E61E74;
+}
+
+.registration {
+  text-decoration: none;
+  color: royalblue;
+  margin-bottom: 1rem;
+}
+
+.programming_img_main {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+}
+
+input[type=submit] {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#E61E74), to(#E61E74));
+  background-image: linear-gradient(0, #E61E74, #E61E74);
+  background-size: 0 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+input[type=submit]:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+/*info*/
+/*# sourceMappingURL=main.css.map */
