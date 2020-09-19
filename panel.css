@@ -3,6 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  font-family: 'Roboto';
 }
 
 p {
@@ -121,6 +122,7 @@ ul li::before {
 
 li a:hover {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 @-webkit-keyframes ShowItems {
@@ -245,5 +247,63 @@ li a:hover {
   left: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+}
+
+/*Video*/
+.container_video_html {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 400px;
+  border-top: 5px solid #0E97C5;
+  border-bottom: 5px solid #0E97C5;
+  text-align: center;
+}
+
+.container_video_html:after {
+  content: "";
+  border-right: 5px solid #0E97C5;
+  top: -40px;
+  right: 20px;
+  position: absolute;
+  height: 480px;
+}
+
+.container_video_html:before {
+  content: "";
+  border-left: 5px solid #0E97C5;
+  top: -40px;
+  left: 20px;
+  position: absolute;
+  height: 480px;
+}
+
+.information_film {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  font-size: 70px;
+  font-family: 'Fredericka the Great', cursive;
+  display: none;
+}
+
+.video_content {
+  position: absolute;
+  right: 5%;
+  top: 20%;
 }
 /*# sourceMappingURL=panel.css.map */

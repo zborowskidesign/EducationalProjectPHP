@@ -15,13 +15,14 @@ if(!isset($_SESSION['log-in']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="panel.css">
     <title>Document</title>
 </head>
 <body>
     <?php 
 
-    echo " <p>Witaj ".$_SESSION['user']. ' [<a class="log-out" href="logout.php">Wyloguj</a>]</p>';
+    echo " <p class='welcome_user_text'>Witaj ".$_SESSION['user']. ' [<a class="log-out" href="logout.php">Wyloguj</a>]</p>';
 
     ?>
 
@@ -30,13 +31,25 @@ if(!isset($_SESSION['log-in']))
 
 <ul class="menu">
 
-    <li><a href="">HTML</a></li>
-    <li><a href="">CSS</a></li>
-    <li><a href="">JavaScript</a></li>
-    <li><a href="">React</a></li>
+    <li class="html_video"><a>HTML</a></li>
+    <li class="css_video"><a>CSS</a></li>
+    <li class="js_video"><a>JavaScript</a></li>
+    <li class="react_video"><a>React</a></li>
 
 </ul>
 
+<!--Video-->
+
+<div class="container_video_html">
+  
+<iframe width="660" height="350" src="https://www.youtube.com/embed/k2IydkL3EOs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+
+<h1 class="information_film">Brak filmów<h1>
+
+<h3 class="video_content">Spis treści</h3>
 
 <!--End--->
 
@@ -61,6 +74,8 @@ if(!isset($_SESSION['log-in']))
 
 
 <script src="dark-mode.js"></script>
+<script src="videos.js"></script>
+
 
 </body>
 </html>
