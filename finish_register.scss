@@ -12,6 +12,7 @@ body
 {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 
@@ -93,6 +94,10 @@ button {
         text-align: center;
         font-size: 15px !important;
         text-transform: uppercase;
+        &:hover 
+        {
+          color:white;
+        }
         a 
         {
             text-decoration: none;
@@ -110,7 +115,7 @@ button {
           }
         }
       }
-      .button-text {
+      .button-text a {
         color: $white;
       }
     }
@@ -122,6 +127,11 @@ h1::first-letter
 {
     font-size: 45px;
     color: #F3BC34;
+}
+
+.second
+{
+  color: #F3BC34;
 }
   
 h1 

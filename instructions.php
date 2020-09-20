@@ -19,6 +19,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="finish_register.css">
     <title></title>
 </head>
@@ -28,7 +29,7 @@
 <!-- 
   <h1 clsas="welcome_text">Dziękujemy za rejestrację! Możesz już zalogować się na swoje konto!</h1> -->
 
-  <h1>Dziękujemy za <strong>rejestrację!</strong> 
+  <h1>Dziękujemy <span class="second">z</span>a <strong><span class="second">r</span>ejestrację!</strong> 
 
 
 <br/><br/>
@@ -41,7 +42,7 @@
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
-    <span class="button-text"><a href="index.php">Zaloguj się</a></span>
+    <a href="index.php"><span class="button-text">Zaloguj się</span></a>
   </button>
 </div>
 

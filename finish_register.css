@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto';
 }
 
 .notification_img {
@@ -96,6 +97,10 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
+button.learn-more .button-text:hover {
+  color: white;
+}
+
 button.learn-more .button-text a {
   text-decoration: none;
   color: #000;
@@ -111,12 +116,16 @@ button:hover .circle .icon.arrow {
           transform: translate(1rem, 0);
 }
 
-button:hover .button-text {
+button:hover .button-text a {
   color: #fff;
 }
 
 h1::first-letter {
   font-size: 45px;
+  color: #F3BC34;
+}
+
+.second {
   color: #F3BC34;
 }
 
