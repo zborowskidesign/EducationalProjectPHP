@@ -185,8 +185,8 @@ li a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 99;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .container .switch .slider:before {
@@ -305,5 +305,132 @@ li a:hover {
   position: absolute;
   right: 5%;
   top: 20%;
+}
+
+.container_indicator {
+  position: absolute;
+  top: 90%;
+  display: inline-block;
+}
+
+iframe {
+  position: absolute;
+  top: 10%;
+}
+
+.index {
+  cursor: pointer;
+  display: inline;
+  margin-right: 32px;
+  padding: 5px;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -moz-user-select: none;
+}
+
+.index:last-child {
+  margin: 0;
+}
+
+svg {
+  left: -13px;
+  position: absolute;
+  top: -12px;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  width: 46px;
+}
+
+path {
+  fill: none;
+  stroke: #0E97C5;
+  stroke-dasharray: 150 150;
+  stroke-width: 15;
+}
+
+.container_indicator.open:not(.flip) path {
+  -webkit-animation: OpenRight 500ms;
+          animation: OpenRight 500ms;
+}
+
+.container_indicator.open.flip path {
+  -webkit-animation: OpenLeft 500ms;
+          animation: OpenLeft 500ms;
+}
+
+.container_indicator.i1 svg {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.container_indicator.i2 svg {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.container_indicator.i3 svg {
+  -webkit-transform: translateX(102px);
+          transform: translateX(102px);
+}
+
+.container_indicator.i4 svg {
+  -webkit-transform: translateX(154px);
+          transform: translateX(154px);
+}
+
+.container_indicator.i5 svg {
+  -webkit-transform: translateX(206px);
+          transform: translateX(206px);
+}
+
+@-webkit-keyframes OpenRight {
+  25% {
+    stroke-dasharray: 100 150;
+  }
+  60% {
+    stroke-dasharray: 100 150;
+  }
+  100% {
+    stroke-dasharray: 150 150;
+  }
+}
+
+@keyframes OpenRight {
+  25% {
+    stroke-dasharray: 100 150;
+  }
+  60% {
+    stroke-dasharray: 100 150;
+  }
+  100% {
+    stroke-dasharray: 150 150;
+  }
+}
+
+@-webkit-keyframes OpenLeft {
+  25% {
+    stroke-dashoffset: -50px;
+  }
+  60% {
+    stroke-dashoffset: -50px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes OpenLeft {
+  25% {
+    stroke-dashoffset: -50px;
+  }
+  60% {
+    stroke-dashoffset: -50px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 /*# sourceMappingURL=panel.css.map */

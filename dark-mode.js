@@ -14,10 +14,16 @@ window.onload = function() {
         let log_out = document.querySelector(".log-out");
         let videoInformation = document.querySelector(".information_film");
         let videoText = document.querySelector(".video_content");
+        let indicators = document.querySelectorAll(".index");
 
         for (i = 0; i < navElements.length; ++i) {
             navElements[i].style.color = "white";
         }
+
+        
+        for (i = 0; i < indicators.length; ++i) {
+          indicators[i].style.color = "white";
+      }
 
         pElement.style.color = "white";
         log_out.style.color = "royalblue";
@@ -34,10 +40,16 @@ window.onload = function() {
         let videoInformation = document.querySelector('.information_film');
         let log_out = document.querySelector(".log-out");
         let videoText = document.querySelector(".video_content");
+        let indicators = document.querySelectorAll(".index");
 
         for (i = 0; i < navElements.length; ++i) {
             navElements[i].style.color = "black";
         }
+
+        for (i = 0; i < indicators.length; ++i) {
+          indicators[i].style.color = "black";
+      }
+
         log_out.style.color = "royalblue"
         pElement.style.color = "black";
         videoInformation.style.color = "black";

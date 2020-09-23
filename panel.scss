@@ -3,6 +3,16 @@
     $night-background: #000;
     $transition-time: 0.5s;
 
+    @mixin indicators {
+        position: absolute;
+        bottom: 0.5%;
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border: 2px solid #0E97C5;
+        border-radius: 50%;
+        display: inline-block;
+    }
 
 
 body 
@@ -154,7 +164,7 @@ li a:hover
     cursor: pointer;
     transition: $transition-time;
     z-index: 99;
-    transform: scale(0.8);
+    transform: scale(0.6);
 }
 .container .switch .slider:before {
     position: absolute;
@@ -272,3 +282,109 @@ li a:hover
     right: 5%;
     top: 20%;
 }
+
+// .d1 {
+//     left: 40%;
+//     @include indicators;
+//     background-color: #0E97C5;
+//   }
+
+//   .d2 
+//   {
+//       left: 45%;
+//       @include indicators;
+//   }
+//   .d3
+//   {
+//       left: 50%;
+//       @include indicators;
+//   }
+//   .d4
+//   {
+//       left: 55%;
+//       @include indicators;
+//   }
+
+//   .film 
+//   {
+//     transition: all 0.5s linear;
+//   }
+
+//   .film:hover 
+//   {
+//       background-color: #0E97C5;
+//       cursor: pointer;
+//   }
+
+//   .addIndcBgc
+//   {
+//     background-color: #0E97C5;
+//   }
+
+
+.container_indicator {
+    position: absolute;
+    top: 90%;
+    display: inline-block;
+  }
+
+  iframe {
+    position: absolute;
+    top: 10%;
+}
+
+  .index {
+    cursor: pointer;
+    display: inline;
+    margin-right: 32px;
+    padding: 5px;
+    user-select: none;
+    -moz-user-select: none;
+  }
+  .index:last-child {
+    margin: 0;
+  }
+  svg {
+    left: -13px;
+    position: absolute;
+    top: -12px;
+    transition: transform 500ms;
+    width: 46px;
+  }
+  path {
+    fill:none;
+    stroke:#0E97C5;
+    stroke-dasharray: 150 150;
+    stroke-width:15;
+  }
+  .container_indicator.open:not(.flip) path {
+    animation: OpenRight 500ms;
+  }
+  .container_indicator.open.flip path {
+    animation: OpenLeft 500ms;
+  }
+  .container_indicator.i1 svg {
+    transform: translateX(0);
+  }
+  .container_indicator.i2 svg {
+    transform: translateX(50px);
+  }
+  .container_indicator.i3 svg {
+    transform: translateX(102px);
+  }
+  .container_indicator.i4 svg {
+    transform: translateX(154px);
+  }
+  .container_indicator.i5 svg {
+    transform: translateX(206px);
+  }
+  @keyframes OpenRight {
+    25% { stroke-dasharray: 100 150; }
+    60% { stroke-dasharray: 100 150; }
+    100% { stroke-dasharray: 150 150; }
+  }
+  @keyframes OpenLeft {
+    25% { stroke-dashoffset: -50px; }
+    60% { stroke-dashoffset: -50px; }
+    100% { stroke-dashoffset: 0; }
+  }
