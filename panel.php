@@ -16,7 +16,7 @@ if(!isset($_SESSION['log-in']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="scss/panel.css">
     <title>Document</title>
 </head>
 <body>
@@ -95,9 +95,9 @@ if(!isset($_SESSION['log-in']))
 
 
 
-<script src="dark-mode.js"></script>
-<script src="videos.js"></script>
-<script src="video-indicators.js"></script>
+<script src="js/dark-mode.js"></script>
+<script src="js/videos.js"></script>
+<script src="js/video-indicators.js"></script>
 
 
 </body>

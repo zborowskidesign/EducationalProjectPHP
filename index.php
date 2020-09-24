@@ -19,7 +19,7 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="scss/main.css">
 
 </head>
 <body>
@@ -54,7 +54,7 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
     </div>
 
 
-    <script src="typing.js"></script>
+    <script src="js/typing.js"></script>
  
 </body>
 </html>

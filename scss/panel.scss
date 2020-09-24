@@ -336,14 +336,12 @@ li a:hover
   .index {
     cursor: pointer;
     display: inline;
-    margin-right: 32px;
+    margin-right: 32.5px;
     padding: 5px;
     user-select: none;
     -moz-user-select: none;
   }
-  .index:last-child {
-    margin: 0;
-  }
+  
   svg {
     left: -13px;
     position: absolute;

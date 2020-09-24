@@ -321,16 +321,12 @@ iframe {
 .index {
   cursor: pointer;
   display: inline;
-  margin-right: 32px;
+  margin-right: 32.5px;
   padding: 5px;
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
   -moz-user-select: none;
-}
-
-.index:last-child {
-  margin: 0;
 }
 
 svg {

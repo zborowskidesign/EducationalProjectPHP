@@ -20,7 +20,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="finish_register.css">
+    <link rel="stylesheet" href="scss/finish_register.css">
     <title></title>
 </head>
  
