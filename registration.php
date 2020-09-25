@@ -92,6 +92,14 @@ try{
             $_SESSION['error_name'] = "Istnieje już podanana nazwa użytkownika";
         }
 
+        //Sprawdzanie zaznaczenia regulaminu 
+
+        if(!isset($_POST['regulations']))
+        {
+            $all_works = false;
+            $_SESSION['error_regulations'] = "Proszę zaznaczyć regulamin";
+        }
+
         if ($all_works==true)
         {
             //Hurra, wszystkie testy zaliczone, dodajemy gracza do bazy
@@ -189,7 +197,15 @@ catch(Exception $e)
 
         ?>
     <label>
-    <input type= "checkbox" name="regulations"/>Akceptuję regulamin
+    <input type= "checkbox" name="regulations"/><a href="RODO/polityka prywatności v1.pdf" target="_blank">Akceptuję regulamin</a>
+    <?php
+        if(isset($_SESSION['error_regulations']))
+        {
+            echo '<div class="error" style="margin-top: 1.5rem; position: absolute">'.$_SESSION['error_regulations'].'</div>';
+            unset($_SESSION['error_regulations']);
+        }
+
+        ?>
     </label>
     <br/>
     <input type = "submit" value="Załóż konto"/> 
