@@ -71,7 +71,10 @@ if(!isset($_SESSION['log-in']))
 
 <h1 class="information_film">Brak filmów<h1>
 
+<div class="materials">
 <h3 class="video_content">Materiały</h3>
+<img src=""/>
+</div>
 
 <!--End--->
 

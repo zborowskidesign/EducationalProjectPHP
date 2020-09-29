@@ -157,3 +157,162 @@ input[type=submit]:hover{
     height: 50%;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .vertical-line
+    {
+        display: none;
+    }
+    .horizontal-line 
+    {
+        display: none;
+    }
+
+    form 
+    {
+        transform: scale(0.8);
+        padding: 0;
+    }
+
+    .programming_img_main {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        height: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .container
+    {
+        display: none;
+    }
+
+}
+
+/*RWD*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+   
+    .top_line
+    {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        display: inline-block;
+        height: 15vh;
+        width: 2px;
+        background-color: #E61E74;
+        animation: moveTopLine 2s forwards;
+    }
+    
+    .back_to_login
+    {
+        position: absolute;
+        top: 4%;
+        left: 1%;
+        text-decoration: none;
+        color: royalblue;
+    }
+    
+    
+    @keyframes moveTopLine
+    {
+        from {height: 0}
+        to {height: 15vh}
+    }
+    
+    @keyframes moveRightLine
+    {
+        from {width: 0}
+        to {width: 48vw}
+       
+    }
+
+    form 
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 5rem;
+        transform: scale(0.7);
+        width: auto;
+    }
+
+    .register_img 
+    {
+        display: none;
+    }
+}
+ 
+
+/* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+        .top_line
+    {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        display: inline-block;
+        height: 15vh;
+        width: 2px;
+        background-color: #E61E74;
+        animation: moveTopLine 2s forwards;
+    }
+    
+    .back_to_login
+    {
+        position: absolute;
+        top: 4%;
+        left: 1%;
+        text-decoration: none;
+        color: royalblue;
+    }
+    
+    
+    @keyframes moveTopLine
+    {
+        from {height: 0}
+        to {height: 15vh}
+    }
+    
+    @keyframes moveRightLine
+    {
+        from {width: 0}
+        to {width: 32vw}
+       
+    }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .register_img 
+        {
+            display: none;
+        }
+    }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -301,10 +301,14 @@ li a:hover {
   display: none;
 }
 
-.video_content {
+.materials {
   position: absolute;
   right: 5%;
   top: 20%;
+}
+
+.materials .video_content {
+  font-size: 1.2rem;
 }
 
 .container_indicator {

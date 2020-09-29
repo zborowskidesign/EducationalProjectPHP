@@ -651,6 +651,7 @@ input[type=submit]:hover {
   }
 }
 
+/*RWD*/
 @media (min-width: 1200px) {
   h1 {
     font-size: 3rem;
@@ -685,4 +686,44 @@ input[type=submit]:hover {
     font-size: 1.5rem;
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .vertical-line {
+    display: none;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  form {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    padding: 0;
+  }
+  .programming_img_main {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    height: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .container {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  form {
+    margin: 20% auto 0 auto;
+  }
+  .container {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=main.css.map */
