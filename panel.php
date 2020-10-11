@@ -73,7 +73,7 @@ if(!isset($_SESSION['log-in']))
 
 <div class="materials">
 <h3 class="video_content">Materiały</h3>
-<img src=""/>
+<div class="underline_materials"></div>
 </div>
 
 <!--End--->

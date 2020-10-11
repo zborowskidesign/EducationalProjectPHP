@@ -285,8 +285,38 @@ li a:hover
   .video_content 
   {
       font-size: 1.2rem;
-  }
 
+  }
+  .underline_materials 
+  {
+    position: absolute;
+    transform:translate(-50%,0%);
+    height: 3px;
+    width: 50px;
+    background-color: #0E97C5;
+    animation: MaterialsUnderline 3s forwards;
+
+  }
+}
+
+.UnderlineIndex
+{
+  z-index: 1 !important;
+}
+
+
+@keyframes MaterialsUnderline {
+  0% {
+    left: -100vw;
+    z-index: -1;
+  }
+  80% {
+    transform: rotate(180deg);
+  }
+  100% { 
+    left: 50%;
+    z-index: -1;
+   }
 }
 
 // .d1 {

@@ -132,6 +132,7 @@ h1::first-letter {
 h1 {
   text-align: center;
   font-size: 40px;
+  color: #FF7381;
 }
 
 h1 strong {

@@ -311,6 +311,51 @@ li a:hover {
   font-size: 1.2rem;
 }
 
+.materials .underline_materials {
+  position: absolute;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  height: 3px;
+  width: 50px;
+  background-color: #0E97C5;
+  -webkit-animation: MaterialsUnderline 3s forwards;
+          animation: MaterialsUnderline 3s forwards;
+}
+
+.UnderlineIndex {
+  z-index: 1 !important;
+}
+
+@-webkit-keyframes MaterialsUnderline {
+  0% {
+    left: -100vw;
+    z-index: -1;
+  }
+  80% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    left: 50%;
+    z-index: -1;
+  }
+}
+
+@keyframes MaterialsUnderline {
+  0% {
+    left: -100vw;
+    z-index: -1;
+  }
+  80% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    left: 50%;
+    z-index: -1;
+  }
+}
+
 .container_indicator {
   position: absolute;
   top: 90%;

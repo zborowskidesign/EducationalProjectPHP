@@ -15,6 +15,7 @@ window.onload = function() {
         let videoInformation = document.querySelector(".information_film");
         let videoText = document.querySelector(".video_content");
         let indicators = document.querySelectorAll(".index");
+        let underlineMaterials = document.querySelector(".underline_materials");
 
         for (i = 0; i < navElements.length; ++i) {
             navElements[i].style.color = "white";
@@ -29,6 +30,8 @@ window.onload = function() {
         log_out.style.color = "royalblue";
         videoInformation.style.color = "white";
         videoText.style.color = "white";
+        underlineMaterials.style.backgroundColor = "white";
+        underlineMaterials.classList.add("UnderlineIndex");
         
        
      
@@ -41,6 +44,7 @@ window.onload = function() {
         let log_out = document.querySelector(".log-out");
         let videoText = document.querySelector(".video_content");
         let indicators = document.querySelectorAll(".index");
+        let underlineMaterials = document.querySelector(".underline_materials");
 
         for (i = 0; i < navElements.length; ++i) {
             navElements[i].style.color = "black";
@@ -54,6 +58,7 @@ window.onload = function() {
         pElement.style.color = "black";
         videoInformation.style.color = "black";
         videoText.style.color = "black";
+        underlineMaterials.style.backgroundColor = " #0E97C5";
        
       }
     });
