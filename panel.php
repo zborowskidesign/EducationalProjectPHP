@@ -26,7 +26,6 @@ if(!isset($_SESSION['log-in']))
 
     ?>
 
-
 <!--Left menu -->
 
 <ul class="menu">
@@ -51,7 +50,6 @@ if(!isset($_SESSION['log-in']))
   <span class="film d4"></span>
 </div> -->
 
-
 <div class="container_indicator">
     <span><div class="index">1</div><div class="index">2</div><div class="index">3</div><div class="index">4</div><div class="index">5</div></span>
     <svg viewBox="0 0 100 100">
@@ -64,15 +62,12 @@ if(!isset($_SESSION['log-in']))
     </svg>
   </div>
 
-
-
 </div>
-
 
 <h1 class="information_film">Brak filmów<h1>
 
 <div class="materials">
-<h3 class="video_content">Materiały</h3>
+<h3  class="video_content" onclick="window.open('https:drive.google.com/drive/folders/1eOiYUjYJsFYIJ7EWw-d3-qh7gInDkPsJ?hl=pl')">Materiały</h3>
 <div class="underline_materials"></div>
 </div>
 
@@ -89,19 +84,17 @@ if(!isset($_SESSION['log-in']))
 <div class="slide-block slide-out">
 </div>
 
-
-
-
 <div class="vertical-line"></div>
 <div class="vertical-line-left"></div>
 <div class="horizontal-line"></div>
 
 
 
+
+
 <script src="js/dark-mode.js"></script>
 <script src="js/videos.js"></script>
 <script src="js/video-indicators.js"></script>
-
 
 </body>
 </html>

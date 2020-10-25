@@ -29,7 +29,7 @@
 <!-- 
   <h1 clsas="welcome_text">Dziękujemy za rejestrację! Możesz już zalogować się na swoje konto!</h1> -->
 
-  <h1>Dziękujemy <span class="second">z</span>a <strong><span class="second">r</span>ejestrację!</strong> 
+  <h1>Dziękujemy za rejestrację!<h1>
 
 
 <br/><br/>
