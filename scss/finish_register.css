@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto';
+  background-color: #f3f8fa;
 }
 
 .notification_img {
@@ -120,46 +121,40 @@ button:hover .button-text a {
   color: #fff;
 }
 
-h1::first-letter {
-  font-size: 45px;
-  color: #F3BC34;
-}
-
 .second {
   color: #F3BC34;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
-  color: #FF7381;
-}
-
-h1 strong {
-  position: relative;
-}
-
-h1 strong::after {
-  content: '';
-  position: absolute;
-  bottom: -0.125rem;
-  left: -0.5rem;
-  right: -0.5rem;
-  height: 0.75rem;
-  z-index: -1;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1 p > strong {
+p > strong {
   font-weight: 400;
 }
 
-h1 p > strong::after {
+p > strong::after {
   bottom: -0.2rem;
   height: 0.5rem;
   left: -0.25rem;
   right: -0.25rem;
+}
+
+.stamp {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-family: 'Courier';
+  -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png");
+  -webkit-mask-size: 944px 604px;
+  color: #FF7381;
+  border: 0.5rem solid #FF7381;
+  -webkit-mask-position: 13rem 6rem;
+  border-radius: 0;
+  mix-blend-mode: multiply;
 }
 /*# sourceMappingURL=finish_register.css.map */

@@ -29,12 +29,19 @@
 <!-- 
   <h1 clsas="welcome_text">Dziękujemy za rejestrację! Możesz już zalogować się na swoje konto!</h1> -->
 
-  <h1>Dziękujemy za rejestrację!<h1>
+
+
+  <!-- <h1>Dziękujemy za <strong>rejestrację!</strong><h1> -->
+
+  <span class="stamp">Approved</span>
+    
 
 
 <br/><br/>
 
     <img class="notification_img" src = "img/notification.png"/>
+
+    
 
 
     <div id="container">
