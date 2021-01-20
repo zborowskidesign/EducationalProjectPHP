@@ -27,10 +27,15 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
 <div class="vertical-line"></div>
 <div class="horizontal-line"></div>
 
+
+<img class= "poland-flag" language= "polish" src="img/Poland.png"/>
+<img class= "usa-flag" language= "english" src="img/USA.png"/>
+
+
     <form action = "login.php" method = "post">
-        Login: <br/> <input type="text" name= "login"/><br/>
-        Hasło: <br/> <input type="password" name= "haslo"/><br/><br/>
-        <input type = "submit" value= "Zaloguj się"/>
+        <span class="login">Login</span> <br/> <input type="text" name= "login"/><br/>
+        <span class="password">Hasło</span> <br/> <input type="password" name= "haslo"/><br/><br/>
+        <input class= "login-btn" type = "submit" value= "Zaloguj się"/>
         <a class = "registration" href="registration.php">Załóż darmowe konto</a>
         <br/><br/>
     <?php
@@ -50,11 +55,12 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
     <!--Info-->
 
     <div class="container">
-        <h1>Nauka <span class="txt-type" data-wait="2500" data-words='["HTML", "CSS", "JavaSscript"]'></span><i class="fas fa-pencil-alt"></i></h1>
+        <h1><span class="course-elements">Nauka</span> <span class="txt-type" data-wait="2500" data-words='["HTML", "CSS", "JavaSscript"]'></span><i class="fas fa-pencil-alt"></i></h1>
     </div>
 
 
     <script src="js/typing.js"></script>
+    <script src="js/translate.js"></script>
  
 </body>
 </html>

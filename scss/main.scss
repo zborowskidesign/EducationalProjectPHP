@@ -38,6 +38,53 @@ body
     animation: moveRight 2s forwards;
 }
 
+   .poland-flag 
+   {
+    width: 50px;
+    position: absolute;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    animation: plflag 2.5s forwards;
+    cursor: pointer;
+   }
+
+   .usa-flag {
+    width: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: usflag 2.5s forwards;
+    cursor: pointer;
+   }
+
+
+@keyframes plflag 
+{
+    from {
+        left: -100%;
+    }
+    to {
+        left: 45%;
+    }
+}
+
+@keyframes usflag 
+{
+    0% {
+        top: 100%;
+        right: 2.5%;
+    }
+    50% {
+        top: 5%;
+        right: 2.5%;
+    }
+
+    100% {
+        top: 5%;
+        right: 45%;
+    }
+}
+
+
 
 @keyframes moveBottom
 {
