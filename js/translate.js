@@ -2,10 +2,11 @@ const usa = document.querySelector('.usa-flag');
 const pl = document.querySelector('.poland-flag');
 
 //const login = document.querySelector('.login');
-const password = document.querySelector('.password');
+//const password = document.querySelector('.password');
 //const registration = document.querySelector('.registration');
 const loginBtn = document.querySelector('.login-btn');
-const courseText = document.querySelector('.course-elements');
+//const courseText = document.querySelector('.course-elements');
+
 
 const language = {
     pl: {
@@ -24,30 +25,7 @@ const language = {
 
 }
 
-
-
-
-
 usa.addEventListener('click', function(){
-
-    // preventDefault();
-
-    //  const urlParams = new URLSearchParams(window.location.search);
-     
-
-    // urlParams.set('language', 'en');
-
-    // window.location.search = urlParams;
-
-
-        // password.textContent = language.en.password
-        // registration.textContent = language.en.register;
-        // loginBtn.value = language.en.LoginButton;
-        // courseText.textContent = language.en.Course;
-    
-      
-
-        // localStorage.removeItem("pl");
     
         localStorage.setItem("password", language.en.password);
         localStorage.setItem("registration",language.en.register);
@@ -69,18 +47,6 @@ usa.addEventListener('click', function(){
 
 
 pl.addEventListener('click', function(){
-
-    //const urlParams = new URLSearchParams(window.location.search);
-
-    // urlParams.set('language', 'pl');
-
-    // window.location.search = urlParams;
-
-   
-    // password.textContent = language.pl.password;
-    // registration.textContent = language.pl.register;
-    // loginBtn.value = language.pl.LoginButton;
-    // courseText.textContent = language.pl.Course;
 
     localStorage.setItem("password", language.pl.password);
     localStorage.setItem("registration",language.pl.register);
