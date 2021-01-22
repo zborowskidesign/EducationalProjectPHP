@@ -34,10 +34,30 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
 
     <form action = "login.php" method = "post">
         <span class="login">Login</span> <br/> <input type="text" name= "login"/><br/>
-        <span class="password">Hasło</span> <br/> <input type="password" name= "haslo"/><br/><br/>
+        <span class="password"><script>
+        
+        // if (typeof(Storage) !== "undefined") {
+        //     const password = document.querySelector('.password');
+        //     password.textContent = "Hasło2"
+        // }
+        if (typeof(Storage)) {
+            const password = document.querySelector('.password');
+            password.textContent = localStorage.getItem('password')
+        }
+        else if (!typeof(Storage)) {
+            const password = document.querySelector('.password');
+            password.textContent = "Hasło2"
+        }
+        
+         </script></span> <br/> <input type="password" name= "haslo"/><br/><br/>
         <input class= "login-btn" type = "submit" value= "Zaloguj się"/>
-        <a class = "registration" href="registration.php">Załóż darmowe konto</a>
+        <a class = "registration" href="registration.php"> 
+        <script>
+        const registration = document.querySelector('.registration');
+        registration.textContent = localStorage.getItem('registration')
+        </script>
         <br/><br/>
+        </a>
     <?php
     if(isset($_SESSION['error']))
     {

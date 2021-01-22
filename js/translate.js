@@ -1,15 +1,14 @@
 const usa = document.querySelector('.usa-flag');
 const pl = document.querySelector('.poland-flag');
 
-const login = document.querySelector('.login');
+//const login = document.querySelector('.login');
 const password = document.querySelector('.password');
-const registration = document.querySelector('.registration');
+//const registration = document.querySelector('.registration');
 const loginBtn = document.querySelector('.login-btn');
 const courseText = document.querySelector('.course-elements');
 
 const language = {
     pl: {
-        login: 'login',
         password: 'Hasło',
         register: 'Załóż darmowe konto',
         LoginButton: 'Zaloguj się',
@@ -25,23 +24,80 @@ const language = {
 
 }
 
+
+
+
+
 usa.addEventListener('click', function(){
 
-    password.textContent = language.en.password
-    registration.textContent = language.en.register;
-    loginBtn.value = language.en.LoginButton;
-    courseText.textContent = language.en.Course;
+    // preventDefault();
+
+    //  const urlParams = new URLSearchParams(window.location.search);
+     
+
+    // urlParams.set('language', 'en');
+
+    // window.location.search = urlParams;
+
+
+        // password.textContent = language.en.password
+        // registration.textContent = language.en.register;
+        // loginBtn.value = language.en.LoginButton;
+        // courseText.textContent = language.en.Course;
+    
+      
+
+        // localStorage.removeItem("pl");
+    
+        localStorage.setItem("password", language.en.password);
+        localStorage.setItem("registration",language.en.register);
+        localStorage.setItem("LoginButton", language.en.LoginButton);
+        localStorage.setItem("courseText", language.en.Course);
+
+        console.log(localStorage.getItem('password'));
+
+        if(password && registration && loginBtn && courseText) 
+        {
+            password.textContent = localStorage.getItem('password');
+            registration.textContent = localStorage.getItem('registration');
+            loginBtn.value = localStorage.getItem('LoginButton');
+            courseText.textContent = localStorage.getItem('courseText');
+            localStorage.removeItem("pl");
+        }
 
 })
+
 
 pl.addEventListener('click', function(){
 
-    password.textContent = language.pl.password;
-    registration.textContent = language.pl.register;
-    loginBtn.value = language.pl.LoginButton;
-    courseText.textContent = language.pl.Course;
+    //const urlParams = new URLSearchParams(window.location.search);
+
+    // urlParams.set('language', 'pl');
+
+    // window.location.search = urlParams;
+
+   
+    // password.textContent = language.pl.password;
+    // registration.textContent = language.pl.register;
+    // loginBtn.value = language.pl.LoginButton;
+    // courseText.textContent = language.pl.Course;
+
+    localStorage.setItem("password", language.pl.password);
+    localStorage.setItem("registration",language.pl.register);
+    localStorage.setItem("LoginButton", language.pl.LoginButton);
+    localStorage.setItem("courseText", language.pl.Course);
+
+
+    if(password && registration && loginBtn && courseText) 
+    {
+        password.textContent = localStorage.getItem('password');
+        registration.textContent = localStorage.getItem('registration');
+        loginBtn.value = localStorage.getItem('LoginButton');
+        courseText.textContent = localStorage.getItem('courseText');
+        localStorage.removeItem("en");
+    }
+    
 })
 
 
 
-console.log(language.pl.login);
