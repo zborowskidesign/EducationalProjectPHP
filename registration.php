@@ -218,7 +218,6 @@ catch(Exception $e)
     <img class="register_img" src="img/register-img.png"/>
 
 
-
-
+    <script src="js/translate.js"></script>
 </body>
 </html>

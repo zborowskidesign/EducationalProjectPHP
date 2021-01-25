@@ -1,11 +1,6 @@
 const usa = document.querySelector('.usa-flag');
 const pl = document.querySelector('.poland-flag');
-
-//const login = document.querySelector('.login');
-//const password = document.querySelector('.password');
-//const registration = document.querySelector('.registration');
 const loginBtn = document.querySelector('.login-btn');
-//const courseText = document.querySelector('.course-elements');
 
 
 const language = {
@@ -24,6 +19,7 @@ const language = {
     }
 
 }
+
 
 usa.addEventListener('click', function(){
     
@@ -64,6 +60,11 @@ pl.addEventListener('click', function(){
     }
     
 })
+
+
+
+
+
 
 
 

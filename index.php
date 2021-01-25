@@ -36,21 +36,21 @@ if((isset($_SESSION['log-in'])) && ($_SESSION['log-in'] == true))
         <span class="login">Login</span> <br/> <input type="text" name= "login"/><br/>
         <span class="password"><script>
 
+    const password = document.querySelector('.password');
+    let firstTime = localStorage.getItem("first_time");
+
+    if(!firstTime) {
+     // first time user loaded!
+     localStorage.setItem("first_time","1");
+     password.textContent = 'Hasło2'  
+
+        }
+
+        else if (firstTime) {
+
             const password = document.querySelector('.password');
-            let firstTime = localStorage.getItem("first_time");
-
-            if(!firstTime) {
-             // first time user loaded!
-             localStorage.setItem("first_time","1");
-             password.textContent = 'Hasło2'  
-
-                }
-
-                else if (firstTime) {
-
-                    const password = document.querySelector('.password');
-                    password.textContent = localStorage.getItem('password')    
-                }
+            password.textContent = localStorage.getItem('password')    
+        }
         
          </script>
          </span> 
