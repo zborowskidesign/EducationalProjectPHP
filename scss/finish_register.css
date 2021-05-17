@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   background-color: #f3f8fa;
 }
 
@@ -44,7 +44,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #E61E74;
+  background: #e61e74;
   border-radius: 1.625rem;
 }
 
@@ -69,7 +69,7 @@ button.learn-more .circle .icon.arrow {
 
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -0.25rem;
   right: 0.0625rem;
   width: 0.625rem;
@@ -122,7 +122,7 @@ button:hover .button-text a {
 }
 
 .second {
-  color: #F3BC34;
+  color: #f3bc34;
 }
 
 p > strong {
@@ -148,11 +148,11 @@ p > strong::after {
   padding: 0.25rem 1rem;
   text-transform: uppercase;
   border-radius: 1rem;
-  font-family: 'Courier';
+  font-family: "Courier";
   -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png");
   -webkit-mask-size: 944px 604px;
-  color: #FF7381;
-  border: 0.5rem solid #FF7381;
+  color: #ff7381;
+  border: 0.5rem solid #ff7381;
   -webkit-mask-position: 13rem 6rem;
   border-radius: 0;
   mix-blend-mode: multiply;

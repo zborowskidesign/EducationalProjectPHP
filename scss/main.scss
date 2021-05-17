@@ -1,196 +1,186 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
 
-body 
-{
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-color:#FEFDFE;
-    font-family: 'Roboto';
-
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fefdfe;
+  font-family: "Roboto";
 }
-
-
 
 /*Animation lines*/
 
-.vertical-line 
-{
-    position: absolute;
-    top: 0;
-    right: 10%;
-    display: inline-block;
-    //height: 100vh;
-    width: 2px;
-    background-color: #E61E74;
-    animation: moveBottom 2s forwards;
+.vertical-line {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: inline-block;
+  //height: 100vh;
+  width: 2px;
+  background-color: #e61e74;
+  animation: moveBottom 2s forwards;
 }
 
-.horizontal-line 
-{
-    position: absolute;
-    top: 10%;
-    left: 0;
-    //width: 100vw;
-    height: 2px;
-    background-color: #E61E74;
-    animation: moveRight 2s forwards;
+.horizontal-line {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  //width: 100vw;
+  height: 2px;
+  background-color: #e61e74;
+  animation: moveRight 2s forwards;
 }
 
-   .poland-flag 
-   {
-    width: 50px;
-    position: absolute;
+.poland-flag {
+  width: 50px;
+  position: absolute;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  animation: plflag 2.5s forwards;
+  cursor: pointer;
+}
+
+.usa-flag {
+  width: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: usflag 2.5s forwards;
+  cursor: pointer;
+}
+
+@keyframes plflag {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 45%;
+  }
+}
+
+@keyframes usflag {
+  0% {
+    top: 100%;
+    right: 2.5%;
+  }
+  50% {
     top: 5%;
-    transform: translate(-50%, -50%);
-    animation: plflag 2.5s forwards;
-    cursor: pointer;
-   }
+    right: 2.5%;
+  }
 
-   .usa-flag {
-    width: 50px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    animation: usflag 2.5s forwards;
-    cursor: pointer;
-   }
-
-
-@keyframes plflag 
-{
-    from {
-        left: -100%;
-    }
-    to {
-        left: 45%;
-    }
+  100% {
+    top: 5%;
+    right: 45%;
+  }
 }
 
-@keyframes usflag 
-{
-    0% {
-        top: 100%;
-        right: 2.5%;
-    }
-    50% {
-        top: 5%;
-        right: 2.5%;
-    }
-
-    100% {
-        top: 5%;
-        right: 45%;
-    }
+@keyframes moveBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
 }
 
-
-
-@keyframes moveBottom
-{
-    from {height: 0}
-    to {height: 100vh}
+@keyframes moveRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
 }
-
-
-@keyframes moveRight
-{
-    from {width: 0}
-    to {width: 100vw}
-}
-
 
 /*Login and register panel*/
 
 form {
-	margin:10% auto 0 auto;
-	padding:30px;
-	width:400px;
-	height:auto;
-	overflow:hidden;
-	background:white;
-    border-radius:10px;
+  margin: 10% auto 0 auto;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
 }
 
 form label {
-	font-size:14px;
-	color:darkgray;
-	cursor:pointer;
+  font-size: 14px;
+  color: darkgray;
+  cursor: pointer;
 }
 
 form label,
 form input {
-	float:left;
-	clear:both;
+  float: left;
+  clear: both;
 }
 
 form input {
-	margin:15px 0;
-	padding:15px 10px;
-	width:100%;
-	outline:none;
-	border:1px solid #bbb;
-	border-radius:20px;
-	display:inline-block;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-    -webkit-transition:0.2s ease all;
-	-moz-transition:0.2s ease all;
-	-ms-transition:0.2s ease all;
-	-o-transition:0.2s ease all;
-	 transition:0.2s ease all;
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
 
-form input[type=text]:focus,
+form input[type="text"]:focus,
 form input[type="password"]:focus {
-	border-color:cornflowerblue;
+  border-color: cornflowerblue;
 }
 
-input[type=submit] {
-	padding:15px 50px;
-    width:auto;
-    background: transparent;
-	border:none;
-	color: #000;
-	cursor:pointer;
-	display:inline-block;
-	float:right;
-	clear:right;
-	-webkit-transition:0.2s ease all;
-	-moz-transition:0.2s ease all;
-    -ms-transition:0.2s ease all;
-	-o-transition:0.2s ease all;
-     transition:0.2s ease all;
-     border: 2px solid #E61E74;
+input[type="submit"] {
+  padding: 15px 50px;
+  width: auto;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  clear: right;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  border: 2px solid #e61e74;
 }
 
-.registration
-{
-    text-decoration: none;
-    color: royalblue;
-    margin-bottom: 1rem;
+.registration {
+  text-decoration: none;
+  color: royalblue;
+  margin-bottom: 1rem;
 }
 
-.programming_img_main 
-{
-    position: absolute;
-    top: 50%;
-    height: 50%;
+.programming_img_main {
+  position: absolute;
+  top: 50%;
+  height: 50%;
 }
 
-input[type=submit]{
-    background-image: linear-gradient(0,  #E61E74, #E61E74);
-    background-size: 0 0;
-    transition: .8s;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+input[type="submit"] {
+  background-image: linear-gradient(0, #e61e74, #e61e74);
+  background-size: 0 0;
+  transition: 0.8s;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-input[type=submit]:hover{
-    background-size: 100% 100%;
-    color: #fff;
+input[type="submit"]:hover {
+  background-size: 100% 100%;
+  color: #fff;
 }
 
 /*info*/
@@ -198,198 +188,290 @@ input[type=submit]:hover{
 /*Typing*/
 
 .container {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    z-index: 99999;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  text-align: center;
+  font-family: "Fredericka the Great", cursive;
+  z-index: 99999;
 }
 
-
 .fas {
-    color: rgb(0, 0, 0);
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
-    animation-name: erasing;    
-    animation-duration: 3s;
-    
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  margin: 0px;
+  padding: 0px;
+  animation-name: erasing;
+  animation-duration: 3s;
 }
 /**** this is the Pencil Erasing animation****/
 .erasing-animation {
-    animation-name: erasing;
-    animation-duration: 1.8s;
+  animation-name: erasing;
+  animation-duration: 1.8s;
 }
 
 @keyframes erasing {
-    0% {transform: rotate(0deg);}
-    10% {transform: rotate(180deg);}
-    60% {transform: rotate(180deg);}
-    70% {transform: rotate(0deg);}
-    100% {transform: rotate(0deg);}
-} 
-    
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 .writing-animation {
-    animation-name: writting;    
-    animation-duration: 4s; 
+  animation-name: writting;
+  animation-duration: 4s;
 }
 
 @keyframes writting {
-    0%  {transform: translate(0px,0px);}
-    2%  {transform: translate(30px,-40px);}
-    4%  {transform: translate(0px,0px);}
-    6%  {transform: translate(30px,-40px);}
-    8% {transform: translate(0px,0px);}
-    10% {transform: translate(30px,-40px);}
-    12% {transform: translate(0px,0px);}
-    14% {transform: translate(30px,-40px);}
-    16% {transform: translate(0px,0px);}
-    18% {transform: translate(30px,-40px);}
-    20% {transform: translate(0px,0px);}
-    22% {transform: translate(30px,-40px);}
-    24% {transform: translate(0px,0px);}
-    26% {transform: translate(30px,-40px);}
-    28% {transform: translate(0px,0px);}
-    30% {transform: translate(30px,-40px);}
-    32% {transform: translate(0px,0px);}
-    34% {transform: translate(30px,-40px);}
-    36% {transform: translate(0px,0px);}
-    38% {transform: translate(30px,-40px);}
-    40% {transform: translate(0px,0px);}
-    42% {transform: translate(30px,-40px);}
-    44% {transform: translate(0px,0px);}
-    46% {transform: translate(30px,-40px);}
-    48% {transform: translate(0px,0px);}
-    50% {transform: translate(30px,-40px);}
-    52% {transform: translate(0px,0px);}
-    54% {transform: translate(30px,-40px);}
-    56% {transform: translate(0px,0px);}
-    58% {transform: translate(30px,-40px);}
-    60% {transform: translate(0px,0px);}
-    62% {transform: translate(30px,-40px);}
-    64% {transform: translate(0px,0px);}
-    66% {transform: translate(30px,-40px);}
-    68%{transform: translate(0px,0px);}
-  
-    70% {transform: translate(30px,-40px);}
-    72% {transform: translate(0px,0px);}
-    74% {transform: translate(30px,-40px);}
-    76% {transform: translate(0px,0px);}
-    78% {transform: translate(30px,-40px);}
-    80% {transform: translate(0px,0px);}
-    82% {transform: translate(30px,-40px);}
-    84% {transform: translate(0px,0px);}
-    86% {transform: translate(30px,-40px);}
-    88% {transform: translate(0px,0px);}
-    90% {transform: translate(30px,-40px);}
-    92% {transform: translate(0px,0px);}
-    94% {transform: translate(30px,-40px);}
-    96% {transform: translate(0px,0px);}
-    98% {transform: translate(30px,-40px);}
-    100% {transform: translate(0px,0px);}
-    
-    
+  0% {
+    transform: translate(0px, 0px);
+  }
+  2% {
+    transform: translate(30px, -40px);
+  }
+  4% {
+    transform: translate(0px, 0px);
+  }
+  6% {
+    transform: translate(30px, -40px);
+  }
+  8% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(30px, -40px);
+  }
+  12% {
+    transform: translate(0px, 0px);
+  }
+  14% {
+    transform: translate(30px, -40px);
+  }
+  16% {
+    transform: translate(0px, 0px);
+  }
+  18% {
+    transform: translate(30px, -40px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  22% {
+    transform: translate(30px, -40px);
+  }
+  24% {
+    transform: translate(0px, 0px);
+  }
+  26% {
+    transform: translate(30px, -40px);
+  }
+  28% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(30px, -40px);
+  }
+  32% {
+    transform: translate(0px, 0px);
+  }
+  34% {
+    transform: translate(30px, -40px);
+  }
+  36% {
+    transform: translate(0px, 0px);
+  }
+  38% {
+    transform: translate(30px, -40px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  42% {
+    transform: translate(30px, -40px);
+  }
+  44% {
+    transform: translate(0px, 0px);
+  }
+  46% {
+    transform: translate(30px, -40px);
+  }
+  48% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(30px, -40px);
+  }
+  52% {
+    transform: translate(0px, 0px);
+  }
+  54% {
+    transform: translate(30px, -40px);
+  }
+  56% {
+    transform: translate(0px, 0px);
+  }
+  58% {
+    transform: translate(30px, -40px);
+  }
+  60% {
+    transform: translate(0px, 0px);
+  }
+  62% {
+    transform: translate(30px, -40px);
+  }
+  64% {
+    transform: translate(0px, 0px);
+  }
+  66% {
+    transform: translate(30px, -40px);
+  }
+  68% {
+    transform: translate(0px, 0px);
+  }
+
+  70% {
+    transform: translate(30px, -40px);
+  }
+  72% {
+    transform: translate(0px, 0px);
+  }
+  74% {
+    transform: translate(30px, -40px);
+  }
+  76% {
+    transform: translate(0px, 0px);
+  }
+  78% {
+    transform: translate(30px, -40px);
+  }
+  80% {
+    transform: translate(0px, 0px);
+  }
+  82% {
+    transform: translate(30px, -40px);
+  }
+  84% {
+    transform: translate(0px, 0px);
+  }
+  86% {
+    transform: translate(30px, -40px);
+  }
+  88% {
+    transform: translate(0px, 0px);
+  }
+  90% {
+    transform: translate(30px, -40px);
+  }
+  92% {
+    transform: translate(0px, 0px);
+  }
+  94% {
+    transform: translate(30px, -40px);
+  }
+  96% {
+    transform: translate(0px, 0px);
+  }
+  98% {
+    transform: translate(30px, -40px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 /*RWD*/
 
-@media(min-width: 1200px){
-    h1 {
-        font-size: 3rem;
-        color:#0E97C5;
-    }
-    .fas {
-        font-size: 3rem;
-        color:#0E97C5;
-    }
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+    color: #0e97c5;
+  }
+  .fas {
+    font-size: 3rem;
+    color: #0e97c5;
+  }
 }
-@media(max-width: 800px){
-    .container {
-        padding: 0 1rem;
-    }
-    h1 {
-        font-size: 2rem;
-        color:#0E97C5;
-    }
-    .fas {
-        font-size: 3rem;
-        color:#0E97C5;
-    }
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #0e97c5;
+  }
+  .fas {
+    font-size: 3rem;
+    color: #0e97c5;
+  }
 }
-@media(max-width: 500px){
-    h1 {
-        font-size: 2 rem;
-        color:#0E97C5;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2 rem;
+    color: #0e97c5;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .vertical-line
-    {
-        display: none;
-    }
-    .horizontal-line 
-    {
-        display: none;
-    }
+  .vertical-line {
+    display: none;
+  }
+  .horizontal-line {
+    display: none;
+  }
 
-    form 
-    {
-        transform: scale(0.8);
-        padding: 0;
-    }
+  form {
+    transform: scale(0.8);
+    padding: 0;
+  }
 
-    .programming_img_main {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        height: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .container
-    {
-        display: none;
-    }
+  .programming_img_main {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+  .container {
+    display: none;
+  }
 }
-
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  form {
+    margin: 20% auto 0 auto;
+  }
 
-    form {
-        margin: 20% auto 0 auto;
-    }
-        
-    .container 
-    {
-        display: none;
-    }
-
+  .container {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }

@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 /*Back line animation*/
@@ -13,7 +13,7 @@ body {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #E61E74;
+  background-color: #e61e74;
   -webkit-animation: moveRightLine 2s forwards;
           animation: moveRightLine 2s forwards;
 }
@@ -25,7 +25,7 @@ body {
   display: inline-block;
   height: 15vh;
   width: 2px;
-  background-color: #E61E74;
+  background-color: #e61e74;
   -webkit-animation: moveTopLine 2s forwards;
           animation: moveTopLine 2s forwards;
 }
@@ -120,12 +120,12 @@ form input {
   transition: 0.2s ease all;
 }
 
-form input[type=text]:focus,
+form input[type="text"]:focus,
 form input[type="password"]:focus {
   border-color: cornflowerblue;
 }
 
-input[type=submit] {
+input[type="submit"] {
   padding: 15px 50px;
   width: auto;
   background: transparent;
@@ -137,22 +137,22 @@ input[type=submit] {
   clear: right;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
-  border: 2px solid #E61E74;
+  border: 2px solid #e61e74;
 }
 
-input[type=submit] {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#E61E74), to(#E61E74));
-  background-image: linear-gradient(0, #E61E74, #E61E74);
+input[type="submit"] {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#e61e74), to(#e61e74));
+  background-image: linear-gradient(0, #e61e74, #e61e74);
   background-size: 0 0;
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
           transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-size: 100% 100%;
   color: #fff;
 }
@@ -201,7 +201,7 @@ input[type=submit]:hover {
     display: inline-block;
     height: 15vh;
     width: 2px;
-    background-color: #E61E74;
+    background-color: #e61e74;
     -webkit-animation: moveTopLine 2s forwards;
             animation: moveTopLine 2s forwards;
   }
@@ -267,7 +267,7 @@ input[type=submit]:hover {
     display: inline-block;
     height: 15vh;
     width: 2px;
-    background-color: #E61E74;
+    background-color: #e61e74;
     -webkit-animation: moveTopLine 2s forwards;
             animation: moveTopLine 2s forwards;
   }

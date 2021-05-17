@@ -3,7 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 p {
@@ -23,7 +23,7 @@ p {
   right: 15%;
   display: inline-block;
   width: 2px;
-  background-color: #E61E74;
+  background-color: #e61e74;
   -webkit-animation: moveBottom 2s forwards;
           animation: moveBottom 2s forwards;
 }
@@ -34,7 +34,7 @@ p {
   left: 15%;
   display: inline-block;
   width: 2px;
-  background-color: #E61E74;
+  background-color: #e61e74;
   -webkit-animation: moveBottom 2s forwards;
           animation: moveBottom 2s forwards;
 }
@@ -44,7 +44,7 @@ p {
   bottom: 10%;
   left: 0;
   height: 2px;
-  background-color: #E61E74;
+  background-color: #e61e74;
   -webkit-animation: moveRight 2s forwards;
           animation: moveRight 2s forwards;
 }
@@ -113,7 +113,7 @@ ul li a {
 
 ul li::before {
   content: "\2022";
-  color: #E61E74;
+  color: #e61e74;
   font-weight: bold;
   display: inline-block;
   margin-left: -0.5rem;
@@ -250,44 +250,27 @@ li a:hover {
 }
 
 /*Video*/
-.container_video_html {
+#video {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 800px;
-  height: 400px;
-  border-top: 5px solid #0E97C5;
-  border-bottom: 5px solid #0E97C5;
-  text-align: center;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  border: 2px solid  #0e97c5;
+  height: 80%;
+  width: 65%;
 }
 
-.container_video_html:after {
-  content: "";
-  border-right: 5px solid #0E97C5;
-  top: -40px;
-  right: 20px;
-  position: absolute;
-  height: 480px;
+.error {
+  color: red;
 }
 
-.container_video_html:before {
-  content: "";
-  border-left: 5px solid #0E97C5;
-  top: -40px;
-  left: 20px;
-  position: absolute;
-  height: 480px;
+.warn {
+  color: orange;
+}
+
+.info {
+  color: darkgreen;
 }
 
 .information_film {
@@ -297,7 +280,7 @@ li a:hover {
   -webkit-transform: translate(-50%, -40%);
           transform: translate(-50%, -40%);
   font-size: 70px;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
   display: none;
 }
 
@@ -318,7 +301,7 @@ li a:hover {
           transform: translate(-50%, 0%);
   height: 3px;
   width: 50px;
-  background-color: #0E97C5;
+  background-color: #0e97c5;
   -webkit-animation: MaterialsUnderline 3s forwards;
           animation: MaterialsUnderline 3s forwards;
 }
@@ -392,7 +375,7 @@ svg {
 
 path {
   fill: none;
-  stroke: #0E97C5;
+  stroke: #0e97c5;
   stroke-dasharray: 150 150;
   stroke-width: 15;
 }
