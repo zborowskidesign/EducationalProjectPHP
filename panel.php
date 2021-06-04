@@ -1,6 +1,9 @@
+
 <?php
 
 session_start();
+
+
 
 if(!isset($_SESSION['log-in']))
 {
@@ -30,20 +33,13 @@ if(!isset($_SESSION['log-in']))
 
     <!--Left menu -->
 
-    <ul class="menu">
+    <div class="chat-container">
+      
+      <?php include "chat.php"; ?>
+      <?php include "post.php"; ?>
 
-        <li class="html_video"><a>HTML</a></li>
-        <li class="css_video"><a>CSS</a></li>
-        <li class="js_video"><a>JavaScript</a></li>
-        <li class="react_video"><a>React</a></li>
+    </div>
 
-    </ul>
-
-    <!--Video-->
-    <p><button id="start">Start Capture</button>&nbsp;<button id="stop">Stop Capture</button></p>
-
-    <video id="video" autoplay></video>
-    <pre id="log"></pre>
 
 
     <div class="materials">
