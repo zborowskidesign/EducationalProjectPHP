@@ -2,19 +2,6 @@ const videoElem = document.getElementById("video");
 const startElem = document.getElementById("start");
 const stopElem = document.getElementById("stop");
 
-// Options for getDisplayMedia()
-
-// const gdmOptions = {
-//     video: {
-//         cursor: "always"
-//       },
-//       audio: {
-//         echoCancellation: false,
-//         noiseSuppression: false,
-//         sampleRate: 44100
-//       }
-//   }
-
 var displayMediaOptions = {
   video: {
     cursor: "always"

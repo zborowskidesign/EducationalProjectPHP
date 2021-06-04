@@ -19,6 +19,9 @@ const language = {
 };
 
 usa.addEventListener("click", function () {
+  var queryParams = new URLSearchParams(window.location.search);
+  queryParams.set("myParam", "en");
+
   localStorage.setItem("password", language.en.password);
   localStorage.setItem("registration", language.en.register);
   localStorage.setItem("LoginButton", language.en.LoginButton);

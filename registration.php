@@ -131,6 +131,7 @@ catch(Exception $e)
 
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -139,23 +140,37 @@ catch(Exception $e)
     <title>Rejestracja</title>
 
     <style>
-        .error 
-        {
-            color: red;
-            margin: 10px 10px;
-        }
+    .error {
+        color: red;
+        margin: 10px 10px;
+    }
     </style>
 </head>
+
 <body>
 
-<div class="container_lines">
-<div class="top_line"></div>
-<a class="back_to_login" href="logout.php">Panel logowania</a>
-<div class="back_line"></div>
+    <div class="container_lines">
+        <div class="top_line"></div>
+        <a class="back_to_login" href="logout.php">Panel logowania</a>
+        <div class="back_line"></div>
     </div>
-    
-    <form method = "post">
-        Nazwa: </br> <input type="text" name="name"/><br/>
+
+    <div class="arrow-line">
+
+        <svg class="arrow-register" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 43.1 85.9" style="enable-background:new 0 0 43.1 85.9;" xml:space="preserve">
+            <path stroke-linecap="round" stroke-linejoin="round" class="st0 draw-arrow"
+                d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1" />
+            <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-1"
+                d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58" />
+            <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-2"
+                d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9" />
+        </svg>
+
+    </div>
+
+    <form method="post">
+        Nazwa: </br> <input type="text" name="name" /><br />
         <?php
         if(isset($_SESSION['error_name']))
         {
@@ -164,7 +179,7 @@ catch(Exception $e)
         }
 
         ?>
-        Hasło: </br> <input type="password" name="password1"/><br/>
+        Hasło: </br> <input type="password" name="password1" /><br />
 
         <?php
         if(isset($_SESSION['error_password']))
@@ -175,7 +190,7 @@ catch(Exception $e)
 
         ?>
 
-        Powtórz hasło: </br> <input type="password" name="password2"/><br/>  
+        Powtórz hasło: </br> <input type="password" name="password2" /><br />
 
         <?php
         if(isset($_SESSION['error_password2']))
@@ -186,8 +201,8 @@ catch(Exception $e)
 
         ?>
 
-           
-        E-mail: </br> <input type="text" name="email"/><br/>
+
+        E-mail: </br> <input type="text" name="email" /><br />
         <?php
         if(isset($_SESSION['error_email']))
         {
@@ -196,9 +211,10 @@ catch(Exception $e)
         }
 
         ?>
-    <label>
-    <input type= "checkbox" name="regulations"/><a href="RODO/polityka prywatności v1.pdf" target="_blank">Akceptuję regulamin</a>
-    <?php
+        <label>
+            <input type="checkbox" name="regulations" /><a href="RODO/polityka prywatności v1.pdf"
+                target="_blank">Akceptuję regulamin</a>
+            <?php
         if(isset($_SESSION['error_regulations']))
         {
             echo '<div class="error" style="margin-top: 1.5rem; position: absolute">'.$_SESSION['error_regulations'].'</div>';
@@ -206,18 +222,15 @@ catch(Exception $e)
         }
 
         ?>
-    </label>
-    <br/>
-    <input type = "submit" value="Załóż konto"/> 
+        </label>
+        <br />
+        <input type="submit" value="Załóż konto" />
 
     </form>
 
-
-
-
-    <img class="register_img" src="img/register-img.png"/>
-
+    <img class="register_img" src="img/register-img.png" />
 
     <script src="js/translate.js"></script>
 </body>
+
 </html>

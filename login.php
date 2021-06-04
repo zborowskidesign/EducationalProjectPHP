@@ -59,9 +59,4 @@ else
     $connect->close();
 }
 
-
-
-
-
-
 ?>
