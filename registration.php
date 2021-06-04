@@ -2,6 +2,7 @@
 
 session_start();
 
+
 if(isset($_POST['email']))
 {
     //walidacja
@@ -144,6 +145,7 @@ catch(Exception $e)
         color: red;
         margin: 10px 10px;
     }
+   
     </style>
 </head>
 
