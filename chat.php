@@ -39,13 +39,11 @@ function loginForm(){
 ?>
  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="utf-8" />
- 
-        <title>Tuts+ Chat Application</title>
+        <title></title>
         <meta name="description" content="Tuts+ Chat Application" />
-        <link rel="stylesheet" href="style.css" />
 
     </head>
     <body>
@@ -66,6 +64,7 @@ function loginForm(){
                 $contents = file_get_contents("log.html");          
                 echo $contents;
             }
+
             ?>
             </div>
  
@@ -106,7 +105,7 @@ function loginForm(){
                 setInterval (loadLog, 2500);
  
                 $("#exit").click(function () {
-                    var exit = confirm("Are you sure you want to end the session?");
+                    var exit = confirm("Po opuszczeniu czatu zostaniesz przekierowany/przekierowana na stronę główną?");
                     if (exit == true) {
                     window.location = "panel.php?logout=true";
                     }
