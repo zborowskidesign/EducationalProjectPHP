@@ -27,16 +27,9 @@
 
 <body>
 
-    <!-- 
-  <h1 clsas="welcome_text">Dziękujemy za rejestrację! Możesz już zalogować się na swoje konto!</h1> -->
-
-
-
-    <!-- <h1>Dziękujemy za <strong>rejestrację!</strong><h1> -->
+    <canvas class='connecting-dots'></canvas>
 
     <span class="stamp">Approved</span>
-
-
 
     <br /><br />
 
@@ -51,7 +44,7 @@
         </button>
     </div>
 
-    <br /><br />
+    <script src="js/finish-register.js"></script>
 
 </body>
 

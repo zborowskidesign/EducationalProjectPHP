@@ -3,8 +3,6 @@
 
 session_start();
 
-
-
 if(!isset($_SESSION['log-in']))
 {
     header('Location: index.php');
@@ -25,6 +23,7 @@ if(!isset($_SESSION['log-in']))
 </head>
 
 <body>
+
     <?php 
 
     echo " <p class='welcome_user_text'>Witaj ".$_SESSION['user']. ' [<a class="log-out" href="logout.php">Wyloguj</a>]</p>';
@@ -39,8 +38,6 @@ if(!isset($_SESSION['log-in']))
       <?php include "post.php"; ?>
 
     </div>
-
-
 
     <div class="materials">
         <h3 class="video_content"
